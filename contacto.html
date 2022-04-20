@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="css/fontawesome/css/fontawesome.min.css">
+</head>
+
+<body id="inicio">
+    <header>
+        <nav class="barrera">
+            <ul>
+                <li><a href="index.html"> Inicio</a></li>
+                <li><a href="contacto.html"> Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Contacto </h1>
+        <form action="" method="post" class="contacto">
+            <div>
+                <label for="txtNombre">Nombre:* </label>
+                <input type="text" name="txtNombre" id="txtNombre" required>
+            </div>
+            <div>
+                <label for="txtCorreo">Correo:*</label>
+                <input type="email" name="txtCorreo" id="txtCorreo" required>
+            </div>
+            <div>
+                <label for="txtTeléfono">Teléfono:</label>
+              <input type="tel" name="txtTeléfono" id="txtTeléfono" placeholder="(011-1234-5678)">
+            </div>
+            <div>
+                <label for="Fecha de nacimiento">Fecha de nacimiento:</label>
+              <input type="date" name="txtFechaNac" id="txtFechaNac">
+            </div>
+            <div>
+                <label for="txtPaisdeOrigen">País de Origen: </label>
+                <input type="text" name="txtPaisdeOrigen" id="txtPaisdeOrigen">
+            </div> 
+            <div>
+                <label for="">Asunto:*</label>
+                <select name="IstAsunto" id="IstAsunto" required>
+                <option selected disabled value="">Seleccionar</option>
+                <option value="PlayStation1">PlayStation 1</option>
+                <option value="playstation2">Playstation 2</option>
+                <option value="playstation3">Playstation 3</option>
+                <option value="playstation4">Playstation 4</option>
+                <option value="playstation5">Playstation 5</option>
+            </select>
+            </div> <br>
+            <div>
+                <label for="">Mensaje:*</label>
+                <textarea name="txtMensaje" id="txtMensaje" cols="30" rows="10">Escribir aquí...</textarea>
+            </div><br>
+            <div>
+                <input type="checkbox" name="chkNewsletter" id="chkNewsletter" checked>
+                <label for="chkNewsletter">Deseo recibir novedades de la página</label>
+            </div>
+            <div>
+                <input type="checkbox" name="chkCondiciones" id="chkCondiciones">
+                <label for="chkCondiciones">Deseo que el vendedor se contacte conmigo</label>
+            </div>
+          <div> <br>
+<button type="submit">ENVIARr</button>       
+          </div> 
+          <div class="whatsapp">
+    <a href="https://api.whatsapp.com/send?phone=541150207014" target="_"><i class="fa-brands fa-whatsapp-square"></i></a> 
+</div>  
+        </form>
+     
+</main>
+</body>
+</html>
